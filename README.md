@@ -14,6 +14,15 @@
 
 ## Installation
 
+### Using paru as AUR helper
+
+```
+# install paru... 
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si  
+```
+
 ### Desktop
 
 ```
