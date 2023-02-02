@@ -17,13 +17,13 @@
 ### Desktop
 
 ```
-paru -S hyprland-bin waybar-hyprland-git sddm sddm-sugar-candy-git wlogout wofi dunst papirus-icon-theme catppuccin-gtk-theme-mocha polkit-gnome wlsunset swayidle udev-block-notify blueman-applet brightnessctl swaylock-effects wofi-emoji wofi-calc wofi-wifi-menu-git playerctl grim slurp pipewire wireplumber xdg-desktop-portal-wlr wl-copy networkmanager
+paru -S hyprland-bin waybar-hyprland-git sddm sddm-sugar-candy-git wlogout wofi dunst papirus-icon-theme catppuccin-gtk-theme-mocha polkit-gnome wlsunset swayidle udev-block-notify blueman brightnessctl swaylock-effects wofi-emoji wofi-calc wofi-wifi-menu-git playerctl grim slurp pipewire wireplumber xdg-desktop-portal-wlr wl-clipboard networkmanager
 ```
 
 ### Applications
 
 ```
-paru -S thunar firefox deluge-gtk kitty wdisplays discord discocss spotify spicetify timeshift eog pavucontrol celluloid file-roller
+paru -S thunar firefox deluge-gtk kitty wdisplays discord discocss-git spotify spicetify-cli timeshift eog pavucontrol celluloid file-roller
 ```
 
 ### Terminal
