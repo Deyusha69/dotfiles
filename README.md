@@ -51,7 +51,7 @@ rsync -avxHAXP --exclude '.git*' .* ~/
 #### Fix Asian fonts
 
 ```sh 
-yay -S ttf-droid
+yay -S ttf-droid noto-fonts-emoji
 ```
 
 ##### Regenerate font cache
