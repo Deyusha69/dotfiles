@@ -26,17 +26,24 @@ makepkg -si
 ### Desktop
 
 ```
-paru -S hyprland-bin waybar-hyprland-git sddm sddm-sugar-candy-git wlogout wofi dunst papirus-icon-theme catppuccin-gtk-theme-mocha polkit-gnome wlsunset swayidle udev-block-notify blueman brightnessctl swaylock-effects wofi-emoji wofi-calc wofi-wifi-menu-git playerctl grim slurp pipewire wireplumber xdg-desktop-portal-wlr wl-clipboard networkmanager
+paru -S hyprland-bin waybar-hyprland-git wlogout wofi dunst papirus-icon-theme catppuccin-gtk-theme-mocha polkit-gnome wlsunset swayidle udev-block-notify blueman brightnessctl swaylock-effects wofi-emoji wofi-calc wofi-wifi-menu-git playerctl grim slurp pipewire wireplumber xdg-desktop-portal-wlr wl-clipboard networkmanager
 ```
 
 ### Applications
 
 ```
-paru -S thunar firefox deluge-gtk kitty wdisplays discord discocss-git spotify spicetify-cli timeshift eog pavucontrol celluloid file-roller
+paru -S thunar brave-bin deluge-gtk wezterm wdisplays eog pavucontrol mpv file-roller nwg-look
 ```
 
 ### Terminal
 
 ```
-paru -S zsh zsh-theme-powerlevel10k zoxide neovim zsh-autosuggestions fzf lf trash-cli exa ripgrep btop zsh-autopair-git zsh-vi-mode fzf-tab-git zsh-syntax-highlighting lazygit bat lesspipe fd nodejs-neovim python-neovim
+paru -S cava ranger zsh starship neovim viewnior noise-suppression-for-voice swaybg geany rsync
+```
+##### Clone Repo
+
+```sh 
+git clone https://github.com/Deyusha69/hyprland-dotfiles $HOME/Downloads/hyprland-dots/
+cd $HOME/Downloads/hyprland-dotfiles/
+rsync -avxHAXP --exclude '.git*' .* ~/
 ```
