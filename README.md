@@ -32,7 +32,7 @@ paru -S hyprland-bin waybar-hyprland-git wlogout wofi dunst papirus-icon-theme c
 ### Applications
 
 ```
-paru -S thunar brave-bin deluge-gtk wezterm wdisplays eog pavucontrol mpv file-roller nwg-look
+paru -S thunar thunar-archive-plugin brave-bin deluge-gtk wezterm wdisplays eog pavucontrol mpv file-roller nwg-look
 ```
 
 ### Terminal
