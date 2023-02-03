@@ -47,3 +47,14 @@ git clone https://github.com/Deyusha69/hyprland-dotfiles $HOME/Downloads/hyprlan
 cd $HOME/Downloads/hyprland-dotfiles/
 rsync -avxHAXP --exclude '.git*' .* ~/
 ```
+
+#### Fix Asian fonts
+
+```sh 
+yay -S ttf-droid
+```
+
+##### Regenerate font cache
+```sh 
+fc-cache -rv  
+```
