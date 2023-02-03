@@ -14,31 +14,31 @@
 
 ## Installation
 
-### Using paru as AUR helper
+### Using yay as AUR helper
 
 ```
-# install paru... 
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si  
+# Before this you need base-devel installed
+git clone https://aur.archlinux.org/yay-bin
+cd yay-bin
+makepkg -si 
 ```
 
 ### Desktop
 
 ```
-paru -S hyprland-bin waybar-hyprland-git wlogout wofi dunst papirus-icon-theme catppuccin-gtk-theme-mocha polkit-gnome wlsunset swayidle udev-block-notify blueman brightnessctl swaylock-effects wofi-emoji wofi-calc wofi-wifi-menu-git playerctl grim slurp pipewire wireplumber xdg-desktop-portal-wlr wl-clipboard networkmanager
+yay -S hyprland-bin waybar-hyprland-git wlogout wofi dunst papirus-icon-theme catppuccin-gtk-theme-mocha polkit-gnome wlsunset swayidle udev-block-notify blueman brightnessctl swaylock-effects wofi-emoji wofi-calc wofi-wifi-menu-git playerctl grim slurp pipewire wireplumber xdg-desktop-portal-wlr wl-clipboard networkmanager
 ```
 
 ### Applications
 
 ```
-paru -S thunar thunar-archive-plugin brave-bin deluge-gtk wezterm wdisplays eog pavucontrol mpv file-roller nwg-look
+yay -S thunar thunar-archive-plugin brave-bin deluge-gtk wezterm wdisplays eog pavucontrol mpv file-roller nwg-look
 ```
 
 ### Terminal
 
 ```
-paru -S cava ranger zsh starship neovim viewnior noise-suppression-for-voice swaybg geany rsync
+yay -S cava ranger zsh starship neovim viewnior noise-suppression-for-voice swaybg geany rsync
 ```
 ##### Clone Repo
 
