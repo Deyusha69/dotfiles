@@ -43,7 +43,7 @@ yay -S cava ranger zsh starship neovim viewnior noise-suppression-for-voice sway
 ##### Clone Repo
 
 ```sh 
-git clone https://github.com/Deyusha69/hyprland-dotfiles $HOME/Downloads/hyprland-dots/
+git clone https://github.com/Deyusha69/hyprland-dotfiles $HOME/Downloads/hyprland-dotfiles/
 cd $HOME/Downloads/hyprland-dotfiles/
 rsync -avxHAXP --exclude '.git*' .* ~/
 ```
