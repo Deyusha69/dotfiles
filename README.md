@@ -32,19 +32,19 @@ yay -S hyprland-bin waybar-hyprland-git wlogout wofi dunst papirus-icon-theme ca
 ### Applications
 
 ```
-yay -S thunar thunar-archive-plugin brave-bin deluge-gtk wezterm wdisplays eog pavucontrol mpv file-roller nwg-look
+yay -S thunar thunar-archive-plugin brave-bin deluge-gtk wdisplays eog pavucontrol mpv file-roller nwg-look inotify-tools-git
 ```
 
 ### Terminal
 
 ```
-yay -S cava ranger zsh starship neovim viewnior noise-suppression-for-voice swaybg geany rsync
+yay -S kitty cava ranger zsh starship neovim viewnior noise-suppression-for-voice swaybg geany rsync
 ```
 ##### Clone Repo
 
 ```sh 
-git clone https://github.com/Deyusha69/hyprland-dotfiles $HOME/Downloads/hyprland-dotfiles/
-cd $HOME/Downloads/hyprland-dotfiles/
+git clone https://github.com/Deyusha69/dotfiles $HOME/Downloads/dotfiles/
+cd $HOME/Downloads/dotfiles/
 rsync -avxHAXP --exclude '.git*' .* ~/
 ```
 
