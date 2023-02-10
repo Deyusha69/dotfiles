@@ -32,7 +32,7 @@ yay -S hyprland-bin waybar-hyprland-git wlogout wofi dunst papirus-icon-theme ca
 ### Applications
 
 ```
-yay -S thunar thunar-archive-plugin brave-bin deluge-gtk wdisplays eog pavucontrol mpv file-roller nwg-look inotify-tools-git
+yay -S thunar thunar-archive-plugin firefox deluge-gtk wdisplays eog pavucontrol mpv file-roller nwg-look inotify-tools-git
 ```
 
 ### Terminal
