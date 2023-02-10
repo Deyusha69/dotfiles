@@ -12,12 +12,12 @@
 -   **Neovim**
 -   **Wofi**
 
-## Installation
+### 💾 Installation:
+The installer only works for **ARCH** Linux, and based distros.
 
-### Using yay as AUR helper
+<b>1. Open a terminal and paste;</b>
 
-```
-# Before this you need base-devel installed
+```sh
 curl -LO https://raw.githubusercontent.com/Deyusha69/dotfiles/master/RiceInstaller ; bash RiceInstaller
 ```
 
