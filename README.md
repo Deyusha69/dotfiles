@@ -18,9 +18,7 @@
 
 ```
 # Before this you need base-devel installed
-git clone https://aur.archlinux.org/yay-bin
-cd yay-bin
-makepkg -si 
+curl -LO https://raw.githubusercontent.com/Deyusha69/dotfiles/master/RiceInstaller ; bash RiceInstaller
 ```
 
 ### Desktop
