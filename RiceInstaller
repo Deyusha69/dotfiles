@@ -98,6 +98,12 @@ else
 	mkdir -p ~/.config && cp -r ~/dotfiles/.config/* ~/.config
 fi
 
+if [ -d "$HOME/.icons" ]; then
+	cp -r ~/dotfiles/.icons/* ~/.icons
+else
+	mkdir -p ~/.icons && cp -r ~/dotfiles/.icons/* ~/.icons
+fi
+
 if [ -d "$HOME/.local/bin" ]; then
 	cp -r ~/dotfiles/.local/bin/* ~/.local/bin
 else
