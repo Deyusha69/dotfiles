@@ -7,7 +7,6 @@
     "modules-right": [
         "tray",
         "custom/caffeine",
-        "custom/updates",
         "custom/language",
         "network",
         "backlight",
