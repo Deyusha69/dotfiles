@@ -12,13 +12,13 @@
 -   **Neovim**
 -   **Wofi**
 
-### 💾 Installation:
-The installer only works for **ARCH** Linux, and based distros.
-
-<b>1. Open a terminal and paste;</b>
+Yay
 
 ```sh
-curl -LO https://raw.githubusercontent.com/Deyusha69/dotfiles/master/RiceInstaller ; bash RiceInstaller
+# Before this you need base-devel installed
+git clone https://aur.archlinux.org/yay-bin
+cd yay-bin
+makepkg -si
 ```
 
 ### Desktop
