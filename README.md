@@ -36,14 +36,17 @@ yay -S thunar thunar-archive-plugin firefox deluge-gtk wdisplays eog pavucontrol
 ### Terminal
 
 ```
-yay -S kitty cava ranger zsh starship neovim viewnior noise-suppression-for-voice swaybg geany rsync
+yay -S kitty cava ranger zsh starship neovim viewnior noise-suppression-for-voice swaybg geany
 ```
 ##### Clone Repo
 
 ```sh 
-git clone https://github.com/Deyusha69/dotfiles $HOME/Downloads/dotfiles/
-cd $HOME/Downloads/dotfiles/
-rsync -avxHAXP --exclude '.git*' .* ~/
+cd ~/Downloads
+git clone https://github.com/Deyusha69/dotfiles.git
+cd dotfiles
+cp -r .config .icons .local ~/
+cp .gtkrc-2.0 .lessfilter .profile .zshenv ~/
+chmod -R +x ~/.scripts/
 ```
 
 #### Fix Asian fonts
