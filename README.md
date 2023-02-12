@@ -59,3 +59,9 @@ yay -S ttf-droid noto-fonts-emoji
 ```sh 
 fc-cache -rv  
 ```
+
+##### Firefox Theme
+```sh 
+cp -r $HOME/dotfiles/misc/firefox/chrome $HOME/.mozilla/firefox/*.default-release/
+cp -r $HOME/dotfiles/misc/firefox/user.js $HOME/.mozilla/firefox/*.default-release/
+```
