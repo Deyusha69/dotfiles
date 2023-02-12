@@ -46,7 +46,7 @@ git clone https://github.com/Deyusha69/dotfiles.git
 cd dotfiles
 cp -r .config .icons .local ~/
 cp .gtkrc-2.0 .lessfilter .profile .zshenv ~/
-chmod -R +x ~/.scripts/
+chmod -R +x ~/.config/hypr/scripts/
 ```
 
 #### Fix Asian fonts
