@@ -21,6 +21,17 @@ cd yay-bin
 makepkg -si
 ```
 
+## 📦 setup
+
+### 💾 Installation:
+The installer only works for **ARCH** Linux, and based distros.
+
+<b>1. Open a terminal and paste;</b>
+
+```sh
+curl -LO https://raw.githubusercontent.com/Deyusha69/dotfiles/master/RiceInstaller ; bash RiceInstaller
+```
+
 ### Desktop
 
 ```
