@@ -123,6 +123,8 @@ printf "Reloading fonts to make it usable \n\n"
 ## Reloading fonts
 fc-cache -rv
 
+chmod -R +x ~/.config/hypr/scripts/
+
 printf "\n\nFonts reloaded succesfully!\n\n"
 sleep 2
 clear
