@@ -1,6 +1,6 @@
 theme = "Catppuccin-mocha"
 
-client_id = "49b0f5f152964298ae99af1cdd121806"
+client_id = ""
 
 app_refresh_duration_in_ms = 32
 
