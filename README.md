@@ -12,14 +12,6 @@
 -   **Neovim**
 -   **Wofi**
 
-Yay
-
-```sh
-# Before this you need base-devel installed
-git clone https://aur.archlinux.org/yay-bin
-cd yay-bin
-makepkg -si
-```
 
 ## 📦 setup
 
