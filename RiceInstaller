@@ -130,6 +130,13 @@ else
 	cp -r $HOME/dotfiles/.local/share/fonts/* $HOME/.local/share/fonts
 fi
 
+if [ ! -d $HOME/.icons ]; then
+	mkdir -p $HOME/.icons
+	cp -r $HOME/dotfiles/.icons/* $HOME/.icons
+else
+	cp -r $HOME/dotfiles/.icons/* $HOME/.icons
+fi
+
 cp -r $HOME/dotfiles/.gtkrc-2.0 $HOME
 cp -r $HOME/dotfiles/.lessfilter $HOME
 cp -r $HOME/dotfiles/.profile $HOME
