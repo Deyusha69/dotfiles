@@ -9,7 +9,7 @@
 -   **Waybar**
 -   **Firefox**
 -   **Kitty**
--   **Neovim**
+-   **Geany**
 -   **Wofi**
 
 
