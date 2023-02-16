@@ -67,8 +67,10 @@ logo "Installing needed packages.."
 
 	yay -S --noconfirm --needed hyprland-bin waybar-hyprland wlogout wofi dunst papirus-icon-theme catppuccin-gtk-theme-mocha thunar /
 				thunar-archive-plugin polkit-gnome wlsunset swayidle udev-block-notify blueman brightnessctl /
-				swaylock-effects firefox wdisplays eog pavucontrol playerctl grim slurp pipewire wireplumber /
-				wf-recorder xdg-desktop-portal-hyprland-git file-roller kitty zsh starship viewnior wl-clipboard /
+				swaylock-effects xdg-desktop-portal-hyprland-git
+				
+	yay -S --noconfirm --needed firefox wdisplays eog pavucontrol playerctl grim slurp pipewire wireplumber /
+				wf-recorder file-roller kitty zsh starship viewnior wl-clipboard /
 				networkmanager nwg-look-bin inotify-tools-git fnm sddm-git noise-suppression-for-voice swaybg geany /
 				ttf-droid noto-fonts-emoji
 				
