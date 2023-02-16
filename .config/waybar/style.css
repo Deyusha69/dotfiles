@@ -118,8 +118,9 @@ tooltip {
 
 #pulseaudio {
     color: #89b4fa;
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px;
     border-left: 0px;
-    border-right: 0px;
 }
 
 #battery {
