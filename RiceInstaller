@@ -135,6 +135,8 @@ cp -r $HOME/dotfiles/.lessfilter $HOME
 cp -r $HOME/dotfiles/.profile $HOME
 cp -r $HOME/dotfiles/.zshenv $HOME
 
+chmod -R +x ~/.config/hypr/scripts/
+
 printf "%s%sFiles copied succesfully!!%s\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2
 clear
