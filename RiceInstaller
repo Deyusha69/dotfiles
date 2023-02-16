@@ -130,10 +130,10 @@ else
 	cp -r $HOME/dotfiles/.local/share/fonts/* $HOME/.local/share/fonts
 fi
 
-cp -r $HOME/dotfiles/home/.gtkrc-2.0 $HOME
-cp -r $HOME/dotfiles/home/.lessfilter $HOME
-cp -r $HOME/dotfiles/home/.profile $HOME
-cp -r $HOME/dotfiles/home/.zshenv $HOME
+cp -r $HOME/dotfiles/.gtkrc-2.0 $HOME
+cp -r $HOME/dotfiles/.lessfilter $HOME
+cp -r $HOME/dotfiles/.profile $HOME
+cp -r $HOME/dotfiles/.zshenv $HOME
 
 printf "%s%sFiles copied succesfully!!%s\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2
