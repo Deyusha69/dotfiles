@@ -65,13 +65,11 @@ clear
 		
 logo "Installing needed packages.."
 
-	yay -S --noconfirm --needed hyprland-bin waybar-hyprland-git wlogout wofi dunst papirus-icon-theme catppuccin-gtk-theme-mocha \
-					 polkit-gnome wlsunset swayidle udev-block-notify blueman brightnessctl swaylock-effects wofi-emoji-git \
-					 wofi-calc wofi-wifi-menu-git playerctl grim slurp pipewire wireplumber xdg-desktop-portal-wlr \
-					 wl-clipboard networkmanager nwg-look inotify-tools-git fnm
+	yay -S --noconfirm --needed hyprland-bin waybar-hyprland wlogout wofi dunst papirus-icon-theme catppuccin-gtk-theme-mocha thunar thunar-archive-plugin \
+					 polkit-gnome wlsunset swayidle udev-block-notify blueman brightnessctl swaylock-effects firefox wdisplays eog pavucontrol \
+					 playerctl grim slurp pipewire wireplumber wf-recorder xdg-desktop-portal-hyprland-git file-roller kitty zsh starship viewnior \
+					 wl-clipboard networkmanager nwg-look-bin inotify-tools-git fnm sddm-git noise-suppression-for-voice swaybg geany ttf-droid noto-fonts-emoji
 					 
-	yay -S --noconfirm --needed thunar thunar-archive-plugin firefox deluge-gtk wdisplays eog pavucontrol mpv file-roller \
-		   kitty cava ranger zsh starship neovim viewnior noise-suppression-for-voice swaybg geany ttf-droid noto-fonts-emoji
 			  
 clear
 			 
