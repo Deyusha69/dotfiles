@@ -108,6 +108,9 @@ else
 	mkdir -p ~/.local/share && cp -r ~/dotfiles/.local/share/* ~/.local/share
 fi
 
+cp -r $HOME/dotfiles/misc/firefox/chrome $HOME/.mozilla/firefox/*.default-release/
+cp -r $HOME/dotfiles/misc/firefox/user.js $HOME/.mozilla/firefox/*.default-release/
+
 cp -r ~/dotfiles/.gtkrc-2.0 ~
 cp -r ~/dotfiles/.lessfilter ~
 cp -r ~/dotfiles/.profile ~
