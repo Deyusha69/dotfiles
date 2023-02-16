@@ -14,7 +14,7 @@
 
 
 ### 💾 Installation:
-The installer only works for **ARCH** Linux, and based distros.
+The installer only works for **ARCH** Linux.
 
 <b>Open a terminal</b>
 - **First download the installer**
