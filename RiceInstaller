@@ -152,14 +152,7 @@ printf "%s%sFonts reloaded succesfully!%s\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2
 clear
 
-logo "Enabling zsh"
+logo "Installation finished"
+printf "%s%sNow logout your session, select bspwm and log in.%s\n\n" "${BLD}" "${CRE}" "${CNC}"
 chsh -s /usr/bin/zsh
 zsh
-printf "%s%sDone!!%s\n" "${BLD}" "${CGR}" "${CNC}"
-sleep 2
-clear
-
-logo "Installation finished"
-sudo systemctl enable sddm
-sudo systemctl start sddm
-printf "%s%sSelect hyprland and log in.%s\n\n" "${BLD}" "${CRE}" "${CNC}"
