@@ -159,6 +159,6 @@ sleep 2
 clear
 
 logo "Installation finished"
-printf "%s%sNow logout your session, select bspwm and log in.%s\n\n" "${BLD}" "${CRE}" "${CNC}"
+printf "%s%sNow Reboot, select hyprland and log in.%s\n\n" "${BLD}" "${CRE}" "${CNC}"
 chsh -s /usr/bin/zsh
 zsh
