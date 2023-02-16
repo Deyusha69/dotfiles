@@ -15,6 +15,11 @@
 
 ### 💾 Installation:
 The installer only works for **ARCH** Linux.
+> **Warning**
+>
+> Again, do not, I said DO NOT blindly run this. Backup your dots beforehand.<br>These commands are well suited for freshly installed systems.
+
+</details>
 
 <b>Open a terminal</b>
 - **First download the installer**
