@@ -118,16 +118,16 @@ fi
 
 if [ ! -d $HOME/.local/share/applications ]; then
 	mkdir -p $HOME/.local/share/applications
-	cp -r $HOME/dotfiles/.local/applications/* $HOME/.local/share/applications
+	cp -r $HOME/dotfiles/.local/share/applications/* $HOME/.local/share/applications
 else
-	cp -r $HOME/dotfiles/.local/applications/* $HOME/.local/share/applications
+	cp -r $HOME/dotfiles/.local/share/applications/* $HOME/.local/share/applications
 fi
 
 if [ ! -d $HOME/.local/share/fonts ]; then
 	mkdir -p $HOME/.local/share/fonts
-	cp -r $HOME/dotfiles/.local/fonts/* $HOME/.local/share/fonts
+	cp -r $HOME/dotfiles/.local/share/fonts/* $HOME/.local/share/fonts
 else
-	cp -r $HOME/dotfiles/.local/fonts/* $HOME/.local/share/fonts
+	cp -r $HOME/dotfiles/.local/share/fonts/* $HOME/.local/share/fonts
 fi
 
 cp -r $HOME/dotfiles/home/.gtkrc-2.0 $HOME
