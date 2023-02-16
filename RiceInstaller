@@ -152,6 +152,12 @@ printf "%s%sFonts reloaded succesfully!%s\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2
 clear
 
+logo "Enabling SDDM service"
+sudo systemctl enable sddm
+printf "%s%sDone!!%s\n" "${BLD}" "${CGR}" "${CNC}"
+sleep 2
+clear
+
 logo "Installation finished"
 printf "%s%sNow logout your session, select bspwm and log in.%s\n\n" "${BLD}" "${CRE}" "${CNC}"
 chsh -s /usr/bin/zsh
