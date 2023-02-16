@@ -13,16 +13,20 @@
 -   **Wofi**
 
 
-## 📦 setup
-
 ### 💾 Installation:
 The installer only works for **ARCH** Linux, and based distros.
 
-<b>1. Open a terminal and paste;</b>
-
+<b>Open a terminal</b>
+- **First download the installer**
 ```sh
-curl -LO https://raw.githubusercontent.com/Deyusha69/dotfiles/master/RiceInstaller
+curl -O https://raw.githubusercontent.com/Deyusha69/dotfiles/master/RiceInstaller
+```
+- **Now give it execute permissions**
+```sh
 chmod +x RiceInstaller
+```
+- **Finally run the installer**
+```sh
 ./RiceInstaller
 ```
 
