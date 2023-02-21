@@ -36,7 +36,6 @@ nm-applet --indicator &
 hyprctl setcursor Simp1e-Catppuccin 24
 wl-paste --watch cliphist store &
 wl-clipboard-history -t &
-bash $HOME/rclone.sh &
 
 # swayidle
 swayidle -w  timeout 1200 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
