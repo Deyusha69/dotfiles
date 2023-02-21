@@ -137,8 +137,6 @@ else
 	cp -r $HOME/dotfiles/.icons/* $HOME/.icons
 fi
 
-cp -r $HOME/dotfiles/.gtkrc-2.0 $HOME
-cp -r $HOME/dotfiles/.lessfilter $HOME
 cp -r $HOME/dotfiles/.zshenv $HOME
 
 chmod -R +x ~/.config/hypr/scripts/
