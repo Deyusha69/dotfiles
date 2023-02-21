@@ -1,5 +1,5 @@
 <h1 align="center">dotfiles</h1>
-<img src='.screenshot.png'>
+<img src='screenshot.png'>
 
 ## Starring!
 
