@@ -1,0 +1,42 @@
+#!/usr/bin/bash
+
+# Policy Authentication Agent
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# https://wiki.hyprland.org/FAQ/#some-of-my-apps-take-a-really-long-time-to-open
+# https://gist.github.com/PowerBall253/2dea6ddf6974ba4e5d26c3139ffb7580
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
+dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP --all &
+
+# gsettings
+gsettings set org.gnome.desktop.interface gtk-theme 'Tokyonight-Dark-BL-LB'
+gsettings set org.gnome.desktop.interface font-name 'CaskaydiaCove Nerd Font 9'
+gsettings set org.gnome.desktop.interface icon-theme 'Tokyonight-Moon'
+gsettings set org.gnome.desktop.interface cursor-theme 'Sweet-cursors'
+
+# notification daemon
+dunst &
+udev-block-notify &
+
+# waybar
+$HOME/.config/hypr/scripts/launch-waybar &
+# $scripts/dynamic &
+
+# wallpaper
+swaybg -m fill -i ~/.config/hypr/wallpapers/wall-03.webp &
+
+# effects
+# $scripts/tools/rgb &
+
+# Applets
+blueman-applet &
+nm-applet --indicator &
+
+# other
+hyprctl setcursor Simp1e-Catppuccin 24
+wl-paste --watch cliphist store &
+wl-clipboard-history -t &
+bash $HOME/rclone.sh &
+
+# swayidle
+swayidle -w  timeout 1200 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
