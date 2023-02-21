@@ -148,7 +148,7 @@ sleep 2
 clear
 
 logo "Installing needed packages from AUR"				 
-yay -S hyprland-bin waybar-hyprland wlogout catppuccin-gtk-theme-mocha wlsunset udev-block-notify blueman swaylock-effects xdg-desktop-portal-hyprland-git firefox wdisplays nwg-look-bin inotify-tools-git fnm sddm-git --removemake --cleanafter
+yay -S hyprland-bin waybar-hyprland wlogout wlsunset udev-block-notify blueman swaylock-effects xdg-desktop-portal-hyprland-git firefox wdisplays nwg-look-bin inotify-tools-git fnm sddm-git --removemake --cleanafter
 sleep 2	  
 clear
 
