@@ -156,11 +156,6 @@ logo "Installing Themes"
 git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git
 cd Tokyo-Night-GTK-Theme/
 sudo cp -r themes/Tokyonight-Dark-BL-LB /usr/share/themes/
-sudo cp -r icons/Tokyonight-Moon /usr/share/icons/
-cd
-git clone https://github.com/EliverLara/Sweet.git -b nova
-cd Sweet/
-sudo cp -r kde/cursors/Sweet-cursors /usr/share/icons/
 sleep 2	  
 clear
 
