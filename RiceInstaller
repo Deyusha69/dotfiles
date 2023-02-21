@@ -54,7 +54,7 @@ while true; do
 			
 logo "Installing needed packages.."
 
-dependencias=(base-devel dunst git geany ranger papirus-icon-theme wofi thunar thunar-archive-plugin polkit-gnome swayidle blueman brightnessctl eog pavucontrol playerctl grim slurp pipewire wireplumber wf-recorder file-roller kitty starship viewnior wl-clipboard networkmanager noise-suppression-for-voice swaybg ttf-droid noto-fonts-emoji)
+dependencias=(base-devel dunst git geany ranger papirus-icon-theme wofi thunar thunar-archive-plugin polkit-gnome swayidle blueman brightnessctl eog pavucontrol playerctl grim slurp pipewire wireplumber wf-recorder file-roller kitty viewnior wl-clipboard networkmanager noise-suppression-for-voice swaybg ttf-droid noto-fonts-emoji)
 
 is_installed() {
   pacman -Qi $1 &> /dev/null
