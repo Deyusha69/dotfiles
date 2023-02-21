@@ -153,6 +153,18 @@ yay -S hyprland-bin waybar-hyprland wlogout catppuccin-gtk-theme-mocha wlsunset 
 sleep 2	  
 clear
 
+logo "Installing Themes"				 
+git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git
+cd Tokyo-Night-GTK-Theme/
+sudo cp -r themes/Tokyonight-Dark-BL-LB /usr/share/themes/
+sudo cp -r icons/Tokyonight-Moon /usr/share/icons/
+cd
+git clone https://github.com/EliverLara/Sweet.git -b nova
+cd Sweet/
+sudo cp -r kde/cursors/Sweet-cursors /usr/share/icons/
+sleep 2	  
+clear
+
 logo "Reloading fonts.."
 fc-cache -rv >/dev/null 2>&1
 printf "%s%sFonts reloaded succesfully!%s\n" "${BLD}" "${CGR}" "${CNC}"
