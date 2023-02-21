@@ -138,6 +138,7 @@ else
 fi
 
 chmod -R +x ~/.config/hypr/scripts/
+chmod +x ~/.config/hypr/autostart
 
 printf "%s%sFiles copied succesfully!!%s\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2
