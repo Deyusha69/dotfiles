@@ -139,6 +139,8 @@ else
 	cp -r $HOME/dotfiles/.icons/* $HOME/.icons
 fi
 
+cp -f $HOME/dotfiles/.zshenv $HOME
+
 chmod -R +x ~/.config/hypr/scripts/
 chmod +x ~/.config/hypr/autostart
 
