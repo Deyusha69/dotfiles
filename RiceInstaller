@@ -150,6 +150,7 @@ clear
 
 logo "Installing needed packages from AUR"				 
 yay -S hyprland-bin waybar-hyprland wlogout wlsunset udev-block-notify blueman swaylock-effects xdg-desktop-portal-hyprland-git firefox inotify-tools-git sddm-git --removemake --cleanafter
+printf "%s%sDone!!%s\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2	  
 clear
 
@@ -158,6 +159,7 @@ git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git
 cd Tokyo-Night-GTK-Theme/
 sudo cp -r themes/Tokyonight-Dark-BL-LB /usr/share/themes/
 cd
+printf "%s%sDone!!%s\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2	  
 clear
 
