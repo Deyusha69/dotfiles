@@ -16,7 +16,6 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Simp1e-Catppuccin'
 
 # notification daemon
 dunst &
-udev-block-notify &
 
 # waybar
 $HOME/.config/hypr/scripts/launch-waybar &
