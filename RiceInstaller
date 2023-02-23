@@ -56,7 +56,7 @@ while true; do
 			
 logo "Installing needed packages.."
 
-dependencias=(base-devel dunst git geany ranger papirus-icon-theme wofi gvfs thunar thunar-archive-plugin polkit-gnome swayidle blueman brightnessctl eog pavucontrol playerctl grim slurp pipewire wireplumber wf-recorder file-roller kitty viewnior wl-clipboard networkmanager noise-suppression-for-voice swaybg ttf-droid noto-fonts-emoji)
+dependencias=(base-devel dunst git geany ranger papirus-icon-theme wofi gvfs starship zsh thunar thunar-archive-plugin polkit-gnome swayidle blueman brightnessctl eog pavucontrol playerctl grim slurp pipewire wireplumber wf-recorder file-roller kitty viewnior wl-clipboard networkmanager noise-suppression-for-voice swaybg ttf-droid noto-fonts-emoji)
 
 is_installed() {
   pacman -Qi $1 &> /dev/null
@@ -156,10 +156,6 @@ git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git
 cd Tokyo-Night-GTK-Theme/
 sudo cp -r themes/Tokyonight-Dark-BL-LB /usr/share/themes/
 cd
-git clone https://github.com/christitustech/mybash
-cd mybash
-chmod +x ./setup.sh
-./setup.sh
 sleep 2	  
 clear
 
@@ -177,5 +173,5 @@ clear
 
 logo "Installation finished"
 printf "%s%sNow Reboot, select hyprland and log in.%s\n\n" "${BLD}" "${CRE}" "${CNC}"
-chsh -s /bin/bash
+chsh -s /usr/bin/zsh
 sudo systemctl start sddm
