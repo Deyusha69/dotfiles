@@ -3,7 +3,7 @@
 
 ## Starring!
 
--   **Catppuccin Mocha**
+-   **Tokyonight GTK**
 -   **Hyprland**
 -   **Papirus Icons**
 -   **Waybar**
