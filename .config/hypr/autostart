@@ -20,9 +20,6 @@ dunst &
 # waybar
 waybar &
 
-# xdg portal hyprland
-~/.scripts/xdg-portal-hyprland &
-
 # wallpaper
 swaybg -m fill -i ~/.wallpapers/wall-03.webp &
 
