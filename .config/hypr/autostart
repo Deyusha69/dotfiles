@@ -24,7 +24,7 @@ waybar &
 ~/.scripts/xdg-portal-hyprland &
 
 # wallpaper
-swaybg -m fill -i ~/.config/hypr/wallpapers/wall-03.webp &
+swaybg -m fill -i ~/.wallpapers/wall-03.webp &
 
 # effects
 # $scripts/tools/rgb &
