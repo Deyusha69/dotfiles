@@ -7,7 +7,6 @@
     "modules-right": [
         "tray",
         "custom/caffeine",
-        "custom/updates",
         "custom/language",
         "network",
         "backlight",
@@ -92,7 +91,7 @@
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "ﱝ Muted",
-        "on-click": "/home/amitgold/.config/hypr/scripts/volume_ctl.sh mute",
+        "on-click": "/.scripts/volume_ctl.sh mute",
         "scroll-step": 1,
         "format-icons": {
             "headphone": "",
