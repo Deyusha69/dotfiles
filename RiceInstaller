@@ -139,9 +139,16 @@ else
 	cp -r $HOME/dotfiles/.icons/* $HOME/.icons
 fi
 
+if [ ! -d $HOME/.scripts ]; then
+	mkdir -p $HOME/.scripts
+	cp -r $HOME/dotfiles/.scripts/* $HOME/.scripts
+else
+	cp -r $HOME/dotfiles/.scripts/* $HOME/.scripts
+fi
+
 cp -f $HOME/dotfiles/.zshenv $HOME
 
-chmod -R +x ~/.config/hypr/scripts/
+chmod -R +x ~/.scripts/
 chmod +x ~/.config/hypr/autostart
 
 printf "%s%sFiles copied succesfully!!%s\n" "${BLD}" "${CGR}" "${CNC}"
