@@ -21,7 +21,7 @@ dunst &
 waybar &
 
 # xdg portal hyprland
-~/.config/hypr/scripts/xdg-portal-hyprland &
+~/.scripts/xdg-portal-hyprland &
 
 # wallpaper
 swaybg -m fill -i ~/.config/hypr/wallpapers/wall-03.webp &
