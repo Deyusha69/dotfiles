@@ -146,6 +146,13 @@ else
 	cp -r $HOME/dotfiles/.scripts/* $HOME/.scripts
 fi
 
+if [ ! -d $HOME/.wallpapers ]; then
+	mkdir -p $HOME/.wallpapers
+	cp -r $HOME/dotfiles/.wallpapers/* $HOME/.wallpapers
+else
+	cp -r $HOME/dotfiles/.wallpapers/* $HOME/.wallpapers
+fi
+
 cp -f $HOME/dotfiles/.zshenv $HOME
 
 chmod -R +x ~/.scripts/
