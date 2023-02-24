@@ -26,9 +26,6 @@ waybar &
 # wallpaper
 swaybg -m fill -i ~/.wallpapers/wall-03.webp &
 
-# effects
-# $scripts/tools/rgb &
-
 # Applets
 blueman-applet &
 nm-applet --indicator &
