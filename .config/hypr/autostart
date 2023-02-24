@@ -18,7 +18,7 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Simp1e-Catppuccin'
 dunst &
 
 # waybar
-$HOME/.config/hypr/scripts/launch-waybar &
+waybar &
 # $scripts/dynamic &
 
 # wallpaper
