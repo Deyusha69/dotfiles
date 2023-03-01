@@ -56,7 +56,7 @@ while true; do
 			
 logo "Installing needed packages.."
 
-dependencias=(base-devel dunst git geany ranger papirus-icon-theme mpv wofi gvfs starship zsh thunar thunar-archive-plugin polkit-gnome swayidle blueman brightnessctl eog pavucontrol playerctl grim slurp pipewire wireplumber wf-recorder file-roller kitty viewnior wl-clipboard networkmanager noise-suppression-for-voice swaybg ttf-droid noto-fonts-emoji)
+dependencias=(base-devel dunst git geany ranger papirus-icon-theme mpv wofi gvfs starship zsh thunar thunar-archive-plugin polkit-gnome swayidle bluez bluez-utils blueman brightnessctl eog pavucontrol playerctl grim slurp pipewire wireplumber wf-recorder file-roller kitty viewnior wl-clipboard networkmanager noise-suppression-for-voice swaybg ttf-droid noto-fonts-emoji)
 
 is_installed() {
   pacman -Qi $1 &> /dev/null
@@ -179,6 +179,12 @@ clear
 
 logo "Reloading fonts.."
 fc-cache -rv >/dev/null 2>&1
+printf "%s%sFonts reloaded succesfully!%s\n" "${BLD}" "${CGR}" "${CNC}"
+sleep 2
+clear
+
+logo "Setup TimeZone Asia/Manila.."
+timedatectl set-timezone Asia/Manila >/dev/null 2>&1
 printf "%s%sFonts reloaded succesfully!%s\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2
 clear
