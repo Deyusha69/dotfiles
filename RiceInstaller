@@ -56,7 +56,7 @@ while true; do
 			
 logo "Installing needed packages.."
 
-dependencias=(base-devel dunst git geany ranger papirus-icon-theme mpv wofi firefox gvfs starship zsh thunar thunar-archive-plugin polkit-gnome swayidle bluez bluez-utils blueman brightnessctl eog pavucontrol playerctl grim slurp pipewire wireplumber wf-recorder file-roller kitty viewnior wl-clipboard networkmanager noise-suppression-for-voice swaybg ttf-droid noto-fonts-emoji)
+dependencias=(base-devel dunst git geany ranger papirus-icon-theme mpv wofi python-requests firefox gvfs starship zsh thunar thunar-archive-plugin polkit-gnome swayidle bluez bluez-utils blueman brightnessctl eog pavucontrol playerctl grim slurp pipewire wireplumber wf-recorder file-roller kitty viewnior wl-clipboard networkmanager noise-suppression-for-voice swaybg ttf-droid noto-fonts-emoji)
 
 is_installed() {
   pacman -Qi $1 &> /dev/null
@@ -156,6 +156,7 @@ fi
 cp -f $HOME/dotfiles/.zshenv $HOME
 
 chmod -R +x ~/.scripts/
+chmod -R +x $HOME/.config/waybar/scripts/
 chmod +x ~/.config/hypr/autostart
 
 printf "%s%sFiles copied succesfully!!%s\n" "${BLD}" "${CGR}" "${CNC}"
