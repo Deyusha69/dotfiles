@@ -195,6 +195,12 @@ printf "%s%sDone!!%s\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2
 clear
 
+logo "Removing xdg-desktop-portal-wlr"
+yay -R xdg-desktop-portal-wlr
+printf "%s%sDone!!%s\n" "${BLD}" "${CGR}" "${CNC}"
+sleep 2
+clear
+
 logo "Installation finished"
 printf "%s%sNow Reboot, select hyprland and log in.%s\n\n" "${BLD}" "${CRE}" "${CNC}"
 chsh -s /usr/bin/zsh
