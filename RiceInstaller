@@ -195,8 +195,10 @@ printf "%s%sDone!!%s\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2
 clear
 
-logo "Removing xdg-desktop-portal-wlr"
+logo "Cleaning"
 yay -R xdg-desktop-portal-wlr
+sudo rm -r dotfiles
+sudo rm -r Tokyo-Night-GTK-Theme
 printf "%s%sDone!!%s\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 2
 clear
