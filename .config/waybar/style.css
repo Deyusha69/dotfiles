@@ -51,6 +51,7 @@ tooltip {
 #custom-language,
 #custom-updates,
 #custom-caffeine,
+#custom-weather,
 #window,
 #clock,
 #battery,
@@ -106,7 +107,8 @@ tooltip {
 
 #clock {
     color: #f9e2af;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
+    border-right: 0px;
     margin-left: 10px;
 }
 
@@ -134,4 +136,11 @@ tooltip {
     color: #cba6f7;
     border-left: 0px;
     border-right: 0px;
+
+}
+
+#custom-weather {
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px;
+    border-left: 0px;
 }
