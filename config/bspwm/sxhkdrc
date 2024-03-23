@@ -18,13 +18,13 @@ super + alt + Return
 	OpenApps --floating
 
 # Application menu
-super + @space
+super + d
 	OpenApps --menu
 
 #####
 
 # Apps (browser, editor, filemanager)
-shift + alt + {b,g,n}
+super + {b,g,e}
 	OpenApps {--browser,--editor,--filemanager}
 
 # Terminal apps (ranger, nvim, ncmpcpp)
@@ -66,21 +66,9 @@ ctrl + alt + {plus,minus,t}
 super + alt + w
 	WallSelect
 
-# Screenshot Now
-Print
-	ScreenShoTer --now
-
 # Screenshot Select
-ctrl + Print
+Print
 	ScreenShoTer --sel
-
-# Screenshot in 10s
-alt + Print
-	ScreenShoTer --in10
-
-# Screenshot active window
-shift + Print
-	ScreenShoTer --active
 
 # Manage brightness
 XF86MonBrightness{Up,Down}
@@ -150,7 +138,7 @@ super + {grave,Tab}
 	bspc {node,desktop} -f last
 
 # focus or send to the given desktop
-super + ctrl + {_,shift + }{1-9,0}
+super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 	
 # Send focused Node to workspace directionally

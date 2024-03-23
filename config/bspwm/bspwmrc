@@ -17,6 +17,10 @@ PATH="$HOME/.config/bspwm/scripts:$PATH"
 rice_dir="$HOME/.config/bspwm/rices/$RICETHEME"
 export XDG_CURRENT_DESKTOP='bspwm'
 
+# Fix Monitor
+#xrandr --output HDMI-1 --primary --mode 1440x900 --rotate normal --output DP-2 --mode 1600x900 --rotate normal --left-of HDMI-1
+#bspc monitor HDMI-1 -s DP-2
+
 ## Fix java applications
 export _JAVA_AWT_WM_NONREPARENTING=1
 
@@ -27,6 +31,8 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 # Default 1 monitor with 6 workspaces
 for monitor in $(xrandr -q | grep -w 'connected' | cut -d' ' -f1); do
     bspc monitor "$monitor" -d '1' '2' '3' '4' '5' '6'
+    #bspc monitor HDMI-1 -d 1 2 3 4 5 6 7 8
+    #bspc monitor DP-2 -d 9 10
     #bspc monitor "$monitor" -d '' '' '' '' '' ''
 done
 
@@ -97,3 +103,9 @@ pidof -q polkit-gnome-authentication-agent-1 || { /usr/lib/polkit-gnome/polkit-g
 
 # Fix cursor
 xsetroot -cursor_name left_ptr
+
+# AutoStart
+#bluetoothctl connect 42:4D:6B:4F:84:9A
+xfce4-power-manager &
+#telegram-desktop &
+#$HOME/.config/bspwm/scripts/autostart_volume.sh &
