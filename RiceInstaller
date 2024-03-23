@@ -7,7 +7,7 @@
 #  ╚═╝  ╚═╝╚═╝ ╚═════╝╚══════╝    ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
 #   Script to install my dotfiles
 #   Author: z0mbi3
-#   url: https://github.com/gh0stzk
+#   url: https://github.com/Deyusha69
 
 CRE=$(tput setaf 1)
 CYE=$(tput setaf 3)
@@ -120,7 +120,7 @@ fi
 
 logo "Downloading dotfiles"
 
-repo_url="https://github.com/gh0stzk/dotfiles"
+repo_url="https://github.com/Deyusha69/dotfiles"
 repo_dir="$HOME/dotfiles"
 
 # Verifica si el directorio del repositorio ya existe y, si es así, lo elimina
@@ -262,7 +262,6 @@ sudo cp -r ~/dotfiles/misc/Anime /usr/share/sddm/themes
 sudo cp ~/dotfiles/misc/irako.png /usr/share/sddm/faces/$USER.face.icon
 sudo sed -i "s/^Current=.*/Current=Anime/g" /lib/sddm/sddm.conf.d/default.conf
 
-sed -i "s/name: 'gh0stzk'/name: '$USER'/" "$HOME"/.local/share/startup-page/config.js
 cp -f "$HOME"/dotfiles/home/.zshrc "$HOME"
 fc-cache -rv >/dev/null 2>&1
 
