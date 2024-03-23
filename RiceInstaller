@@ -85,7 +85,7 @@ dependencias=(alacritty base-devel brightnessctl bspwm dunst feh geany git image
 			        xdo xdotool xorg-xdpyinfo xorg-xkill xorg-xprop xorg-xrandr xorg-xsetroot \
 			        xorg-xwininfo zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting \
                     noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-cjk sddm mpv gvfs thunar thunar-archive-plugin \
-                    pavucontrol file-roller viewnior xfce4-power-manager python-pip dbus)
+                    pavucontrol file-roller viewnior xfce4-power-manager python-pip dbus lxappearance)
 
 is_installed() {
     pacman -Q "$1" &> /dev/null
