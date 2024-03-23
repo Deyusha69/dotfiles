@@ -83,7 +83,9 @@ dependencias=(alacritty base-devel brightnessctl bspwm dunst feh geany git image
 			        rofi rustup sxhkd ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd \
 			        ttf-joypixels ttf-terminus-nerd ueberzug webp-pixbuf-loader xclip xdg-user-dirs \
 			        xdo xdotool xorg-xdpyinfo xorg-xkill xorg-xprop xorg-xrandr xorg-xsetroot \
-			        xorg-xwininfo zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting)
+			        xorg-xwininfo zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting \
+                    noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-cjk sddm mpv gvfs thunar thunar-archive-plugin \
+                    pavucontrol file-roller viewnior xfce4-power-manager python-pip dbus)
 
 is_installed() {
     pacman -Q "$1" &> /dev/null
@@ -253,15 +255,13 @@ else
     sleep 1
 fi
 
-if cp -R ~/dotfiles/misc/firefox/* ~/.mozilla/firefox/*.default-release/ 2>> RiceError.log; then
-    printf "%s%sFirefox theme %scopied succesfully!%s\n" "${BLD}" "${CYE}" "${CGR}" "${CNC}"
-    sleep 1
-else
-    printf "%s%sFirefox theme %sfailed to been copied, see %sRiceError.log %sfor more details.%s\n" "${BLD}" "${CYE}" "${CRE}" "${CBL}" "${CRE}" "${CNC}"
-    sleep 1
-fi
+sed -i "s/irako/$USER"/ ~/dotfiles/misc/usr/share/sddm/themes/sugar-candy/theme.conf
+sudo cp -r ~/dotfiles/misc/usr/share/sddm/themes/sugar-candy/* /usr/share/sddm/themes/sugar-candy/
+sudo cp -r ~/dotfiles/misc/lib/sddm/sddm.conf.d/default.conf /lib/sddm/sddm.conf.d/
+sudo cp -r ~/dotfiles/misc/Anime /usr/share/sddm/themes
+sudo cp ~/dotfiles/misc/irako.png /usr/share/sddm/faces/$USER.face.icon
+sudo sed -i "s/^Current=.*/Current=Anime/g" /lib/sddm/sddm.conf.d/default.conf
 
-sed -i "s/user_pref(\"browser.startup.homepage\", \"file:\/\/\/home\/z0mbi3\/.local\/share\/startup-page\/index.html\")/user_pref(\"browser.startup.homepage\", \"file:\/\/\/home\/$USER\/.local\/share\/startup-page\/index.html\")/" "$HOME"/.mozilla/firefox/*.default-release/user.js
 sed -i "s/name: 'gh0stzk'/name: '$USER'/" "$HOME"/.local/share/startup-page/config.js
 cp -f "$HOME"/dotfiles/home/.zshrc "$HOME"
 fc-cache -rv >/dev/null 2>&1
@@ -323,6 +323,11 @@ else
     }
 fi
 
+chmod +x $HOME/.config/bspwm/scripts/autostart_volume.sh
+chmod +x $HOME/.config/bspwm/scripts/record.sh
+chmod +x $HOME/.config/bspwm/scripts/record1.sh
+chmod +x $HOME/.config/bspwm/scripts/player-mpris-tail.py
+pip install dbus-python
 ########## ---------- Enabling MPD service ---------- ##########
 
 logo "Enabling mpd service"
@@ -352,4 +357,16 @@ if [[ $SHELL != "/usr/bin/zsh" ]]; then
 else
     printf "%s%sYour shell is already zsh\nGood bye! installation finished, now reboot%s\n" "${BLD}" "${CGR}" "${CNC}"
 fi
-zsh
+
+logo "Setup TimeZone Asia/Manila.."
+timedatectl set-timezone Asia/Manila >/dev/null 2>&1
+printf "%s%sSuccesfully!%s\n" "${BLD}" "${CGR}" "${CNC}"
+sleep 2
+clear
+
+logo "Enabling SDDM service"
+sudo systemctl enable sddm
+printf "%s%sDone!!%s\n" "${BLD}" "${CGR}" "${CNC}"
+sleep 2
+clear
+reboot
